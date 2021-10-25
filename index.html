@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!---- ESTILOS CSS----->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/fcf8213e0b.js" crossorigin="anonymous"></script>
+    <!----- JS ----->
+    <script defer src="JS/general.js"></script>
+    <script defer src="JS/modalCarr.js"></script>
+    <script defer src="JS/fromHome.js"></script>
+    <script defer src="JS/header.js"></script>
+
+    <title>HOME</title>
+</head>
+
+<body>
+    <!----- HEADER ----->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img class="imagen" src="./img/Logo/Logo.jpg" alt="Logo">
+            </div>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="#carta">Carta</a>
+                <a href="sucursal.html">Sucursales</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="botonCarrito"><i class="fas fa-shopping-cart"></i><span
+                        id="contadorCarrito">0</span></button>
+            </div>
+        </nav>
+    </header>
+    <!----BANNER HERO HOME ----->
+    <section class="bannerHero">
+        <div class="bannerTexto Contenedor">
+            <h1 class="bannerTitulo">Sigue disfrutando del mejor sushi desde la comidad de tu casa</h1>
+            <a href="#carta" class="Boton">Carta</a>
+        </div>
+    </section>
+    <!---- FROM DESPACHOS O RETIROS ----->
+    <main class="fromContenedor">
+        <div class="fromSegundo">
+            <div class="title-text">
+                <div class="title login">
+                    RETIRO
+                </div>
+                <div class="title signup">
+                    DESPACHO
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">RETIRO</label>
+                    <label for="signup" class="slide signup">DESPACHO</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <!---- PARTE 1 ------>
+                    <form id="formulario" class="login">
+                        <div class="field">
+                            <input type="text" id="nombre" placeholder="NOMBRE" required>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Enviar" id="btnEnviar">
+                        </div>
+                    </form>
+                    <!----- PARTE 2 ------->
+                    <form id="formularioDos" class="signup">
+                        <div class="field">
+                            <input type="text" id="direccion" placeholder="Direccion" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="edito" placeholder="numero de casa" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" class="edito" placeholder="Referencia ej. Casa, Depa">
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Enviar" id="btnEnviarDos">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!---- CARTA PRODUCTOS ----->
+    <H1 id="carta">CARTA</H1>
+    <main id="contenedorProductos">
+
+    </main>
+    <!-- MODAL DEL CARRITO -->
+    <div class="modalContenedor">
+        <div class="modalCarrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carritoContenedor">
+            </div>
+            <p class="precioProducto">precio total:$<span id="precioTotal"></span></p>
+            <input type="button" onclick="alerta()" value="Finalizar compra">
+        </div>
+    </div>
+    <!----- FOOTER O PIE DE PAGINA--------->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/Logo/Logo.jpg" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>ShaolinSushi</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

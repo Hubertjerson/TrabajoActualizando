@@ -1,0 +1,177 @@
+.fromContenedor {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: url("../img/Banner/BannerHomePromo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+::selection {
+  background: #fa4299;
+  color: #fff;
+}
+.fromSegundo {
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.fromSegundo .title-text {
+  display: flex;
+  width: 200%;
+}
+.fromSegundo .title {
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.fromSegundo .slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup {
+  color: #000;
+}
+.slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.slide-controls label.signup {
+  color: #000;
+}
+.slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type="radio"] {
+  display: none;
+}
+#signup:checked ~ .slider-tab {
+  left: 50%;
+}
+#signup:checked ~ label.signup {
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login {
+  color: #000;
+}
+#login:checked ~ label.signup {
+  color: #000;
+}
+#login:checked ~ label.login {
+  cursor: default;
+  user-select: none;
+}
+.fromSegundo .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-inner form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form .btn {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(
+    right,
+    #a445b2,
+    #fa4299,
+    #a445b2,
+    #fa4299
+  );
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+form .btn:hover .btn-layer {
+  left: 0;
+}
+form .btn input[type="submit"] {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#nombre {
+  margin-left: 4rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+#direccion {
+  margin-left: 4rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+.edito {
+  margin-left: 4rem;
+  padding: 10px;
+  border-radius: 10px;
+}

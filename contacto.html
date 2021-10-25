@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fcf8213e0b.js" crossorigin="anonymous"></script>
+    <!----ESTILOS CSS----->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!----------JS----------->
+    <script defer src="JS/contacto.js"></script>
+    <script defer src="JS/modalCarr.js"></script>
+    <script defer src="JS/header.js"></script>
+    <title>contacto</title>
+</head>
+
+<body>
+    <!----- HEADER ----->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img class="imagen" src="./img/Logo/Logo.jpg" alt="Logo">
+            </div>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="/index.html#carta">Carta</a>
+                <a href="sucursal.html">Sucursales</a>
+                <a href="contacto.html">Contacto</a>
+                <button id="botonCarrito"><i class="fas fa-shopping-cart"></i><span
+                        id="contadorCarrito">0</span></button>
+            </div>
+        </nav>
+    </header>
+    <!------ SECCION DE CONTACTO -------->
+    <section class="contacto">
+        <div class="contenedor">
+            <div class="cabeza">
+                <h2>Registre Y Obtenga Excelentes Promociones</h2>
+            </div>
+            <form id="form" class="form" onsubmit="guardando(e)">
+                <div class="contenedorForm">
+                    <label for="username">Usuario</label>
+                    <input type="text" placeholder="usuarionombre" id="usuario" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="contenedorForm">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="soyusuario@gmail.com" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="contenedorForm">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="contraseña" id="password" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="contenedorForm">
+                    <label for="password2">Vuelva a Escribir la Contraseña</label>
+                    <input type="password" placeholder="contraseña" id="password2" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button id="guardar">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!----- FOOTER O PIE DE PAGINA--------->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/Logo/Logo.jpg" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>ShaolinSushi</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>

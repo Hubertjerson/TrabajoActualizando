@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sucursal</title>
+   <script src="https://kit.fontawesome.com/fcf8213e0b.js" crossorigin="anonymous"></script>
+   <!---- ESTILOS CSS----->
+   <link rel="stylesheet" href="CSS/styles.css">
+   <!--- JQUERY ----->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <script defer src="JS/jQuery.js"></script>
+   <!----JS----->
+   <script defer src="JS/header.js"></script>
+   <script defer src="JS/modalCarr.js"></script>
+</head>
+
+<body>
+   <!----- HEADER ----->
+   <header class="header">
+      <nav class="nav">
+         <div class="logo">
+            <img class="imagen" src="./img/Logo/Logo.jpg" alt="Logo">
+         </div>
+         <div class="icono" id="icono">
+            <span>&#9776;</span>
+         </div>
+         <div class="enlaces uno" id="enlaces">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="/index.html#carta">Carta</a>
+            <a href="sucursal.html">Sucursales</a>
+            <a href="contacto.html">Contacto</a>
+            <button id="botonCarrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+         </div>
+      </nav>
+   </header>
+   <!----- SUCURSALES CON JQUERY ------->
+   <main class="sucursal">
+      <div class="slider owl-carousel">
+         <div class="card">
+            <div class="img">
+               <img src="./img/Sucursal/Local1.jpg" alt="Local1">
+            </div>
+            <div class="content">
+               <div class="title">
+                  BATUCO
+               </div>
+               <div class="sub-title">
+                  AV. España 2110 Batuco
+               </div>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil
+                  minus
+                  sed unde voluptas cumque.
+               </p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="./img/Sucursal/Local2.jpg" alt="Local2">
+            </div>
+            <div class="content">
+               <div class="title">
+                  LAMPA
+               </div>
+               <div class="sub-title">
+                  AV. Los Halcones 7120 Laranpita
+               </div>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil
+                  minus
+                  sed unde voluptas cumque.
+               </p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="./img/Sucursal/Local3.jpg" alt="Local3">
+            </div>
+            <div class="content">
+               <div class="title">
+                  SANTIAGO
+               </div>
+               <div class="sub-title">
+                  AV. El Salto 2770 Recoleta
+               </div>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil
+                  minus
+                  sed unde voluptas cumque.
+               </p>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!----- FOOTER O PIE DE PAGINA--------->
+   <footer class="pie-pagina">
+      <div class="grupo-1">
+         <div class="box">
+            <figure>
+               <a href="#">
+                  <img src="img/Logo/Logo.jpg" alt="Logo">
+               </a>
+            </figure>
+         </div>
+         <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+         </div>
+         <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+               <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-instagram"></a>
+               <a href="#" class="fa fa-twitter"></a>
+               <a href="#" class="fa fa-youtube"></a>
+            </div>
+         </div>
+      </div>
+      <div class="grupo-2">
+         <small>&copy; 2021 <b>ShaolinSushi</b> - Todos los Derechos Reservados.</small>
+      </div>
+   </footer>
+
+</body>
+
+</html>
